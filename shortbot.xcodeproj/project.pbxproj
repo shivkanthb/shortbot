@@ -15,6 +15,8 @@
 		58D0F12F1E34A2D100B1A176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D0F12D1E34A2D100B1A176 /* LaunchScreen.storyboard */; };
 		58D0F13A1E34A2D100B1A176 /* shortbotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0F1391E34A2D100B1A176 /* shortbotTests.swift */; };
 		58D0F1451E34A2D100B1A176 /* shortbotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0F1441E34A2D100B1A176 /* shortbotUITests.swift */; };
+		96D3C4691E3628520054122C /* BotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3C4681E3628520054122C /* BotCache.swift */; };
+		96D3C46B1E3628620054122C /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D3C46A1E3628620054122C /* Bot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		58D0F1401E34A2D100B1A176 /* shortbotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shortbotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D0F1441E34A2D100B1A176 /* shortbotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortbotUITests.swift; sourceTree = "<group>"; };
 		58D0F1461E34A2D100B1A176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D3C4681E3628520054122C /* BotCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BotCache.swift; path = Model/BotCache.swift; sourceTree = "<group>"; };
+		96D3C46A1E3628620054122C /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bot.swift; path = Model/Bot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,10 @@
 		58D0F1231E34A2D100B1A176 /* shortbot */ = {
 			isa = PBXGroup;
 			children = (
+				96D3C4671E36283A0054122C /* Model */,
+				96D3C4661E3628220054122C /* View Controllers */,
 				58D0F1241E34A2D100B1A176 /* AppDelegate.swift */,
-				58D0F1261E34A2D100B1A176 /* ViewController.swift */,
 				58D0F1281E34A2D100B1A176 /* Main.storyboard */,
-				58D0E30D1E34AA750088C792 /* TableController.swift */,
 				58D0F12B1E34A2D100B1A176 /* Assets.xcassets */,
 				58D0F12D1E34A2D100B1A176 /* LaunchScreen.storyboard */,
 				58D0F1301E34A2D100B1A176 /* Info.plist */,
@@ -126,6 +130,24 @@
 				58D0F1461E34A2D100B1A176 /* Info.plist */,
 			);
 			path = shortbotUITests;
+			sourceTree = "<group>";
+		};
+		96D3C4661E3628220054122C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58D0E30D1E34AA750088C792 /* TableController.swift */,
+				58D0F1261E34A2D100B1A176 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		96D3C4671E36283A0054122C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96D3C4681E3628520054122C /* BotCache.swift */,
+				96D3C46A1E3628620054122C /* Bot.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +289,9 @@
 			files = (
 				58D0E30E1E34AA750088C792 /* TableController.swift in Sources */,
 				58D0F1271E34A2D100B1A176 /* ViewController.swift in Sources */,
+				96D3C4691E3628520054122C /* BotCache.swift in Sources */,
 				58D0F1251E34A2D100B1A176 /* AppDelegate.swift in Sources */,
+				96D3C46B1E3628620054122C /* Bot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
